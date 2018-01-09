@@ -1,0 +1,50 @@
+.postmodtools {
+    margin-top: -.25rem;
+}
+
+.postmodtools .dropdown-trigger {
+    display: none;
+}
+
+.postmodtools .dropdown-menu {
+    display: inline-block !important;
+    position: relative;
+    min-width: unset;
+}
+
+.postmodtools .dropdown-content {
+    background-color: unset;
+    box-shadow: unset;
+}
+
+.postmodtools:hover .dropdown-item:not(:hover) {
+    /* This avoids items moving away from under the cursor while the user decides on an option. */
+    /* Unfortunately, this seems to sometimes 'stick' in Firefox. It's not a serious issue but may be annoying. */
+    transition: max-width 9999s 1s;
+}
+
+.postmodtools .dropdown-item {
+    padding: 0;
+    display: inline-block;
+    overflow: hidden;
+    font-size: inherit;
+    padding-right: .5rem;
+    transition: max-width .5s;
+}
+
+.postmodtools .dropdown-item:hover {
+    margin-top: -.5rem;
+    max-width: 10rem;
+}
+
+.postmodtools .dropdown-item:only-child:hover {
+    margin-top: 0;
+}
+
+.postmodtools .dropdown-item:not(:hover) {
+    max-width: 1.5rem;
+}
+
+.postmodtools .icon {
+    font-size: 0.875rem;
+}

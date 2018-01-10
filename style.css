@@ -10,6 +10,7 @@
     display: inline-block !important;
     position: relative;
     min-width: unset;
+    z-index: unset;
 }
 
 .postmodtools .dropdown-content {

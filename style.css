@@ -32,7 +32,7 @@
     transition: max-width 1s;
 }
 
-.postmodtools:hover * ~ .dropdown-item:not(:hover)  {
+.postmodtools:hover * ~ .dropdown-item:not(:hover) {
     transition-delay: 10s;
 }
 

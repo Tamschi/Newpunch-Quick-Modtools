@@ -27,15 +27,31 @@
     font-size: inherit;
     padding-right: .5em;
     height: 26.4px; /* height of .postheader - 1px */
+    
     max-width: 1.5rem; /* width of .icon */
     transition: max-width 1s;
 }
 
-.postmodtools:hover * ~ .dropdown-item:not(:hover) {
+.postmodtools:hover * ~ .dropdown-item:not(:hover)  {
     transition-delay: 10s;
 }
 
 .postmodtools .dropdown-item:hover {
     transition-delay: 0s;
     max-width: 100vw;
+}
+
+@media screen and (max-width: 1023px) {
+    .postmodtools .dropdown.is-mobile-modal .dropdown-menu {
+        width: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        position: unset;
+    }
+    
+    .postmodtools .dropdown.is-mobile-modal .dropdown-menu .dropdown-item {
+        padding: 0;
+        padding-right: .5em;
+    }
 }

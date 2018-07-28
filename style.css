@@ -1,5 +1,6 @@
 .postmodtools {
     height: 24px;
+    overflow: hidden;
 }
 
 .postmodtools .dropdown-trigger {
